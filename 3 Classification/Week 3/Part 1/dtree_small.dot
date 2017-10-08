@@ -1,0 +1,16 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="safe_loans <= 0.5\ngini = 0.5\nsamples = 37040\nvalue = [18581, 18459]"] ;
+1 [label="grade_A <= 0.5\ngini = 0.4963\nsamples = 31860\nvalue = [17306, 14554]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.4809\nsamples = 21758\nvalue = [13004, 8754]"] ;
+1 -> 2 ;
+3 [label="gini = 0.489\nsamples = 10102\nvalue = [4302, 5800]"] ;
+1 -> 3 ;
+4 [label="revol_util_150.7 <= 0.5\ngini = 0.3711\nsamples = 5180\nvalue = [1275, 3905]"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="gini = 0.3457\nsamples = 153\nvalue = [119, 34]"] ;
+4 -> 5 ;
+6 [label="gini = 0.3542\nsamples = 5027\nvalue = [1156, 3871]"] ;
+4 -> 6 ;
+}
